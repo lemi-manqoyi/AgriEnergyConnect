@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="AgriEnergyConnect.User"  %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <%--  Linking Library Files to Master Page Head Tag --%>
+
+    <%-- bootstrap.css --%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- datatable.css --%>
+    <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet"/>
+    <%-- fontawesome.css --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%-- bootstrap.js --%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--creating division for header on master page--%>
+        <div>
+            <%--creating navbar to hold links as tags--%>
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <%--creating anchor tag that will hold logo and name application, adapted from bootstrap.css--%>
+                <a class="navbar-brand" href="#">
+                    <img src="images/agriconnect_icon.jpg" width="50" height="50" />
+                    AgriConnectEnergy
+                </a>
+
+                <%--creating toggle button to collapse and expand menu or navbar links on small screen devices, adapted from bootstrap.css--%>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+              <%--creating navbar supported content, with href link to home page, adapted from bootstrap.css--%>
+                <div class="collapse navbar-collapse " >
+                    <ul class="navbar-nav me-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+
+                    </ul>
+                 </div>
+
+                 <%-- navbar supported content floated div to end, with dynamic unordered list and linkbuttons to user: sign-in, sign-up, and logout onclick pages, adapted from bootstrap.css--%>
+                <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item active">
+                           <asp:LinkButton CssClass="nav-link" ID="LinkButton2" runat="server"> Farmer Login</asp:LinkButton> 
+                        </li>
+                         <li class="nav-item active">
+                           <asp:LinkButton CssClass="nav-link" ID="LinkButton5" runat="server"> Employee Login</asp:LinkButton> 
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server"> Sign-Up</asp:LinkButton> 
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton3" runat="server"> Log Out</asp:LinkButton>
+                        </li>
+                         <li class="nav-item active">
+                             <asp:LinkButton CssClass="nav-link" ID="LinkButton4" runat="server"> Hello User</asp:LinkButton>
+                        </li>
+                    </ul>
+                    <div class="d-flex" role="search">
+                            <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search" >
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <%--creating division for main content on master page--%>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <%--creating placeholder for footer in body of master page--%>
+        <footer>
+            <p style="text-align: center">
+                &copy  All Rights Reserved  |    
+               <a class="footerlinks" href="#" target="_blank">Liyema Manqoyi | ST10085622 &reg
+               </a>
+            </p>
+
+
+        </footer>
+
+
+    </form>
+</body>
+</html>
