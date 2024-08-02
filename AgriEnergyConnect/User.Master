@@ -56,20 +56,20 @@
                  <%-- navbar supported content floated div to end, with dynamic unordered list and linkbuttons to user: sign-in, sign-up, and logout onclick pages, adapted from bootstrap.css--%>
                 <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
                      <ul class="navbar-nav ms-auto ">
+                         <li class="nav-item active">
+                           <asp:LinkButton CssClass="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click"> View Products</asp:LinkButton> 
+                        </li>
                         <li class="nav-item active">
-                           <asp:LinkButton CssClass="nav-link" ID="LinkButton2" runat="server"> Farmer Login</asp:LinkButton> 
+                           <asp:LinkButton CssClass="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"> Employee Login</asp:LinkButton> 
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"> Sign-Up</asp:LinkButton> 
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton3" runat="server" Visible="false"> Log Out</asp:LinkButton>
                         </li>
                          <li class="nav-item active">
-                           <asp:LinkButton CssClass="nav-link" ID="LinkButton5" runat="server"> Employee Login</asp:LinkButton> 
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server"> Sign-Up</asp:LinkButton> 
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" ID="LinkButton3" runat="server"> Log Out</asp:LinkButton>
-                        </li>
-                         <li class="nav-item active">
-                             <asp:LinkButton CssClass="nav-link" ID="LinkButton4" runat="server"> Hello User</asp:LinkButton>
+                             <asp:LinkButton CssClass="nav-link" ID="LinkButton4" runat="server" Visible="false"> Hello User</asp:LinkButton>
                         </li>
                     </ul>
                     <div class="d-flex" role="search">
@@ -89,6 +89,20 @@
 
         <%--creating placeholder for footer in body of master page--%>
         <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                             <asp:LinkButton CssClass="footer-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"> Farmer Login</asp:LinkButton>
+                                &nbsp
+                             <asp:LinkButton CssClass="footer-link" ID="LinkButton6" Visible="false" runat="server"> Farmer Add Products</asp:LinkButton>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
             <p style="text-align: center">
                 &copy  All Rights Reserved  |    
                <a class="footerlinks" href="#" target="_blank">Liyema Manqoyi | ST10085622 &reg

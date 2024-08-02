@@ -10,7 +10,7 @@
     <div class="row">
 
          <%--1st card with 8/12 of container column fill--%>
-        <div class="col-md-8 " >
+        <div class="col-md-9 " >
 
          <%--card to view added products--%>
         <div class="card">
@@ -58,7 +58,7 @@
         </div>
 
         <%--2nd card with 4/12 of container column fill--%>
-        <div class="col-md-4 " >
+        <div class="col-md-3 " >
 
       <%--card to add new farmer--%>
       <div class="card">
@@ -78,7 +78,6 @@
               <div class="col">
                   <center>
                      <h4>Adding New Farmer Profile</h4>
-                      <asp:Label class="badge rounded-pill text-bg-primary" ID="Label1" runat="server" Text="Farmer Add Status" ></asp:Label>
                   </center>
               </div>
           </div>

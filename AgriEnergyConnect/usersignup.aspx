@@ -39,14 +39,14 @@
                         <div class="col-md-6">                            
                               <div class="form">
                                 <label>First Name</label>
-                                <asp:TextBox CssClass="form-control" ID="Textbox1" runat="server" placeholder="First Name" ></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="txtbxName" runat="server" placeholder="First Name" ></asp:TextBox>
                             </div>     
                         </div> 
                     
                         <div class="col-md-6">
                             <div class="form">
                                 <label>Surname</label>
-                                <asp:TextBox CssClass="form-control" ID="Textbox3" runat="server" placeholder="Surname" ></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="txtbxSurname" runat="server" placeholder="Surname" ></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -78,22 +78,17 @@
                          <div class="col">
                              <div class="form">
                                 <label>Username</label>
-                                <asp:TextBox Class="form-control" ID="Textbox5" runat="server" placeholder="Email Address"  ></asp:TextBox>
+                                <asp:TextBox Class="form-control" ID="txtbxUsername" runat="server" placeholder="Email Address"  ></asp:TextBox>
                             </div>
                              <div class="form">
                                  <label>Password</label>
-                                 <asp:TextBox Class="form-control" ID="Textbox2" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
+                                 <asp:TextBox Class="form-control" ID="txtbxPassword" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
                              </div>
-                             <div class="form">
-                                 <label> Confirm Password</label>
-                                 <asp:TextBox Class="form-control" ID="Textbox4" runat="server" placeholder="Confirm Password" TextMode="Password" ></asp:TextBox>
-                                 
-                             </div>
-
+                             
                             <br />
 
                              <div class="d-grid gap-2 col-md-6 mx-auto" >
-                                  <asp:Button class="btn btn-success btn-lg" ID="Button" runat="server" Text="Sign-Up"  ></asp:Button>
+                                  <asp:Button class="btn btn-success btn-lg" ID="Button" runat="server" Text="Sign-Up" OnClick="Button_Click"  ></asp:Button>
                              </div>
                              
                              <br />
