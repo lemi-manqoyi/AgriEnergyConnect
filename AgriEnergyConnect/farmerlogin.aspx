@@ -39,20 +39,20 @@
                             <div class="col">
                                 <div class="form">
                                     <label>Farmer Email</label>
-                                    <asp:TextBox CssClass="form-control" ID="Textbox1" runat="server" placeholder="Email Address" ></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtbxUsername" runat="server" placeholder="Email Address" ></asp:TextBox>
                                 </div>
                                 
                                 <br />
 
                                 <div class="form">
                                     <label>Farmer Password</label>
-                                    <asp:TextBox CssClass="form-control" ID="Textbox2" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtbxPassword" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
                                 </div>
 
                                <br />
 
                                 <div class="d-grid gap-2 col-md-6 mx-auto" >
-                                     <asp:Button class="btn btn-success btn-lg" ID="Button" runat="server" Text="Login"  ></asp:Button>
+                                     <asp:Button class="btn btn-success btn-lg" ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"   ></asp:Button>
                                 </div>
                                 
                                 <br />

@@ -33,49 +33,49 @@ namespace AgriEnergyConnect
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LinkButton7 control.
+        /// lkbtnViewProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton7;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnViewProducts;
 
         /// <summary>
-        /// LinkButton5 control.
+        /// lkbtnEmployeeLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnEmployeeLogin;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// lkbtnEmployeeSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnEmployeeSignUp;
 
         /// <summary>
-        /// LinkButton3 control.
+        /// lkbtnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnLogout;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// lkbtnProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnProfile;
 
         /// <summary>
         /// MainContentPlaceHolder control.
@@ -87,21 +87,21 @@ namespace AgriEnergyConnect
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContentPlaceHolder;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// lkbtnFarmerLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnFarmerLogin;
 
         /// <summary>
-        /// LinkButton6 control.
+        /// lkbtnFarmerAddProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnFarmerAddProducts;
     }
 }
