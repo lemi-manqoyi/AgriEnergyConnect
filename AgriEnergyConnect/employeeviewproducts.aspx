@@ -5,7 +5,7 @@
 
     
 <%--container for responsive web pages--%>
-<div class="container-fluid" >
+<div class="container" >
 
     <div class="row">
 

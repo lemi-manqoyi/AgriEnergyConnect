@@ -24,7 +24,7 @@ namespace AgriEnergyConnect
                     lkbtnLogout.Visible = false;
                     lkbtnProfile.Visible = false;
 
-                    lkbtnFarmerLogin.Visible = false;
+                    lkbtnFarmerLogin.Visible = true;
                     lkbtnFarmerAddProducts.Visible = false;
                 }
                 //if session has employee logged in

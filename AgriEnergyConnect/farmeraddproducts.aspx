@@ -43,6 +43,17 @@
                     </div>
                 </div>
 
+                <%--farm name--%>
+                <div class="row">
+                   <div class="col-md-12">                            
+                         <div class="form">
+                           <label>Product Name</label>
+                           <asp:TextBox CssClass="form-control" ID="txtbxFarmName" runat="server" placeholder="Farm Name" ></asp:TextBox>
+                       </div>     
+                   </div> 
+                </div>
+                <br />
+
                 <%--product name--%>
                 <div class="row">
                    <div class="col-md-12">                            

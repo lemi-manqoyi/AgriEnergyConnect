@@ -44,9 +44,10 @@ namespace AgriEnergyConnect
                         Response.Write("<script>alert('Welcome back" +sdr.GetValue(0).ToString() + "');</script>");
                         //configuring farmer sessions variables to control featurse available for farmer
                             Session["username"] = sdr.GetValue(3).ToString();
-                            Session["name"] = sdr.GetValue(0).ToString();
+                            Session["farmname"] = sdr.GetValue(0).ToString();
                             Session["role"] = "farmer";
                         }
+                    Response.Write("<script>alert('Successful Login');</script>");
                     Response.Redirect("homepage.aspx");
                 }
                 else
