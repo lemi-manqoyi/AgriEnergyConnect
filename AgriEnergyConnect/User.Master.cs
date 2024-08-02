@@ -90,6 +90,7 @@ namespace AgriEnergyConnect
             Session["username"] = "";
             Session["name"] = "";
             Session["role"] = "";
+            Response.Redirect("homepage.aspx");
         }
 
         protected void lkbtnProfile_Click(object sender, EventArgs e)

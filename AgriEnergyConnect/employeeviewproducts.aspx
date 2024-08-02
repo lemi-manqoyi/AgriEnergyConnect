@@ -47,7 +47,7 @@
                 <%--data grid view--%>
                 <div class="row">
                     <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged"></asp:GridView> 
                     </div>
                 </div>
 

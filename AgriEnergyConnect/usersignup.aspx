@@ -39,7 +39,7 @@
                         <div class="col-md-6">                            
                               <div class="form">
                                 <label>First Name</label>
-                                <asp:TextBox CssClass="form-control" ID="txtbxName" runat="server" placeholder="First Name" ></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="txtbxName" runat="server" placeholder="First Name"  ></asp:TextBox>
                             </div>     
                         </div> 
                     

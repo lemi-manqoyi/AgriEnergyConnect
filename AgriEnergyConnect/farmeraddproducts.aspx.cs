@@ -24,7 +24,7 @@ namespace AgriEnergyConnect
 
         protected void btnPost_Click(object sender, EventArgs e)
         {
-
+            
             try
             {
                 SqlConnection con = new SqlConnection(strcon);
@@ -33,11 +33,11 @@ namespace AgriEnergyConnect
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO * Products(Name, Category, ProductionDate) values(@Name,@Category,@ProductionDate)", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Products(Name, Category, ProductionDate) values(@Name,@Category,@ProductionDate)", con);
 
                 cmd.Parameters.AddWithValue("@Name", txtbxProductName.Text.Trim());
                 cmd.Parameters.AddWithValue("@Category", txtbxCategory.Text.Trim());
-                cmd.Parameters.AddWithValue("@ProductionDate", txtbxDate.TextMode);
+                cmd.Parameters.AddWithValue("@ProductionDate",txtbxDate.Text);
 
                 cmd.ExecuteNonQuery();
                 con.Close();
